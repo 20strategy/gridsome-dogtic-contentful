@@ -41,7 +41,10 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'About us',
+    meta:[
+      {charset:'utf-8'},
+      {name: "description", content:" Dogs have been with us more than 10,000 years. "}]
   }
 }
 </script>

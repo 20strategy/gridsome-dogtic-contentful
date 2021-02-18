@@ -9,6 +9,7 @@
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^14.1.2",
     "@gridsome/source-contentful": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0"
   }
 }

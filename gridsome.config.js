@@ -18,5 +18,10 @@ module.exports = {
         typeName: 'Contentful'
       }
     }
-  ]
+  ],
+  transformer: {
+    remark:{
+      
+    }
+  }
 }
