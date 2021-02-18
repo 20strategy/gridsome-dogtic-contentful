@@ -1,0 +1,14 @@
+{
+  "name": "DOGTIC",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.2",
+    "@gridsome/source-contentful": "^0.6.0",
+    "gridsome": "^0.7.0"
+  }
+}
