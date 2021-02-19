@@ -10,8 +10,9 @@
       <g-image :src="edge.node.picture1.file.url" style="width:100%; height:500px;
       object-fit:contain;" :alt="edge.node.picture1.title" />
         <p>{{edge.node.description}}</p>
-      </div>
       
+      <g-link :to="edge.node.slug" >Read more...</g-link>
+      </div>
     
   </Layout>
 </template>
@@ -25,6 +26,7 @@
       node{
         id
         title
+        slug
         picture1 {
           id
           title
