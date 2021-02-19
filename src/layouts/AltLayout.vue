@@ -2,7 +2,8 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link exact to="/">{{ $static.metadata.siteName }}</g-link>
+        
+        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dog.svg" width="45" />DOGTIC</g-link>
       </strong>
       <nav class="nav">
         <g-link exact class="nav__link" to="/">Home</g-link>
@@ -26,10 +27,11 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: 'Jost','Helvetica','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;
+  background-color: #ffffdb ;
 }
 .active {
     color: #f66;
@@ -52,5 +54,8 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+.logoimage{
+  margin-right:10px;
 }
 </style>

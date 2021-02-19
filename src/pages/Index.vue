@@ -51,6 +51,9 @@ export default {
   margin-right: auto;
   width: 98%;
 }
+h1,h2{
+  color:#555;
+}
 p {
   color: #666
 }
