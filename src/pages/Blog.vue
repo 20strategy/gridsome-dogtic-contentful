@@ -11,7 +11,7 @@
       object-fit:contain;" :alt="edge.node.picture1.title" />
         <p>{{edge.node.description}}</p>
       
-      <g-link :to="edge.node.slug" >Read more...</g-link>
+      <g-link :to= "edge.node.path" >Read more...</g-link>
       </div>
     
   </Layout>
@@ -27,6 +27,7 @@
         id
         title
         slug
+        path
         picture1 {
           id
           title
@@ -50,4 +51,5 @@ export default {
     title: 'About us'
   }
 }
+
 </script>
