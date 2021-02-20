@@ -3,10 +3,10 @@
     <header class="header">
       <strong>
         
-        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dog.svg" width="45" />DOGTIC</g-link>
+        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic-logo.svg" width="120" /></g-link>
       </strong>
       <nav class="nav">
-        <g-link exact class="nav__link" to="/">Home</g-link>
+        
         <g-link class="nav__link" to="/about/">About</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
         <g-link class="nav__link" to="/products/">Products</g-link>
