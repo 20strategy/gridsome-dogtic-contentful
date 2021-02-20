@@ -3,7 +3,7 @@
     <header class="header">
       <strong>
         
-        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic-logo.svg" width="120" /></g-link>
+        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic3.svg" width="120" /></g-link>
       </strong>
       <nav class="nav">
         
@@ -25,7 +25,12 @@ query {
 }
 </static-query>
 
-<style>
+<style >
+@font-face {
+  font-family: Jost;
+  src: url('../assets/Jost-Regular.ttf');
+  font-weight: normal;
+}
 body {
   font-family: 'Jost','Helvetica','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
   margin:0;
@@ -48,7 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 80px;
 }
 
