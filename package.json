@@ -1,5 +1,5 @@
 {
-  "name": "DOGTIC",
+  "name": "Dogtic.com",
   "private": false,
   "scripts": {
     "build": "gridsome build",

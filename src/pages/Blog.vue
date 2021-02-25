@@ -5,13 +5,15 @@
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
     <h1 style="text-align:center">Blog</h1>
     <div v-for="edge in $page.allContentfulBlog.edges" :key="edge.node.id">
-      <h2 style="margin-bottom:0.25em; text-align:center;"> {{edge.node.title}}</h2>
+      <g-link :to= "edge.node.path" >
+        <h2 style="margin-bottom:0.25em; text-align:center;"> {{edge.node.title}}</h2></g-link>
     
-      <g-image :src="edge.node.picture1.file.url" style="width:100%; height:500px;
-      object-fit:contain;" :alt="edge.node.picture1.title" />
-        <p>{{edge.node.description}}</p>
+      <g-link :to= "edge.node.path" ><g-image :src="edge.node.picture1.file.url" style="width:100%; 
+      object-fit:contain;" :alt="edge.node.picture1.title" /></g-link>
+        <p>{{edge.node.excerpt}}</p>
       
       <g-link :to= "edge.node.path" >Read more... </g-link>
+      <br>
       </div>
     
   </Layout>
@@ -26,6 +28,7 @@
       node{
         id
         title
+        excerpt
         slug
         path
         picture1 {
@@ -48,8 +51,27 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'Dogtic Blog'
   }
 }
 
 </script>
+
+<style>
+div {
+  margin-bottom: 60px;
+}
+a {
+  color:#999;
+  text-decoration:none;
+}
+a:hover {
+   color: #666;
+   text-decoration: none;
+}
+
+a: {
+  color: red;
+  text-decoration: none;
+}
+</style>
