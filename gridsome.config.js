@@ -24,6 +24,13 @@ module.exports = {
         path: './content/blog/**/*.md',
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Products',
+        path: './content/products/**/*.md',
+      }
+    },
 
   ],
   templates: {
@@ -31,6 +38,11 @@ module.exports = {
         {path: '/blog/:slug',
         component: './src/templates/ContentfulBlog.vue'
     }
-    ]
-  }
+    ],
+  ContentfulProduct:[
+      {path: '/products/:slug',
+      component: './src/templates/ContentfulProduct.vue'
+    }
+  ]
+}
 }

@@ -13,5 +13,10 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-gridsome": "^1.6.2",
+    "vue-eslint-parser": "^7.5.0"
   }
 }

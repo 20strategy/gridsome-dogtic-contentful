@@ -3,7 +3,7 @@
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <g-image class="heroimage" alt="cool dogs" src="~/aboutpage.webp" width="600" />
+    <g-image class="heroimage" alt="cool dogs" src="~/aboutpage.webp" width="700" />
 
     <h1>What Happens When You Try to Fake Your Death in Front of Your Dog?</h1>
 

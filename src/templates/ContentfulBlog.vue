@@ -1,8 +1,9 @@
 <template>
     <Layout>
     
-      <g-image :src="$page.post.picture1.file.url" />
+      <g-image class="bannerimage" :src="$page.post.picture1.file.url" width="250"  height="300" fit="fill" />
       <p class="blogposts" v-html="richTextToHTML($page.post.description)"></p>
+  
         
   </Layout>
     
@@ -44,7 +45,11 @@ export default {
 }
 </script>
 <style >
+.bannerimage {
+  width:98%;
 
+
+}
 .blogposts img {
 width: 100%;
 }

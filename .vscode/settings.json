@@ -1,0 +1,10 @@
+{
+    "auto-close-tag.disableOnLanguage": [
+    
+    ],
+    "vetur.grammar.customBlocks": {
+        "docs": "md",
+        "i18n": "json",
+        "page-query": "graphql"
+      },
+}
