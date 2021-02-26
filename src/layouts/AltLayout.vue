@@ -3,7 +3,7 @@
     <header class="header">
       <strong>
         
-        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic-logo.svg" width="150" /></g-link>
+        <g-link class="logo-text" exact to="/">DOGTIC.<span style="color:red;">com</span></g-link>
       </strong>
       <nav class="nav">
         
@@ -41,7 +41,10 @@ body {
 .active {
     color: #f66;
 }
-
+.logo-text {
+  font-size: 30px;
+  color:blue;
+}
 .layout {
   max-width: 760px;
   margin: 0 auto;
