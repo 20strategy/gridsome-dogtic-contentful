@@ -3,7 +3,7 @@
     <header class="header">
       <strong>
         
-        <g-link class="logo-text" exact to="/">DOGTIC.<span style="color:red;">com</span></g-link>
+        <g-link class="logo-text" exact to="/"><span>dogtic.</span><span style="color:red; letter-spacing:1px;">com</span></g-link>
       </strong>
       <nav class="nav">
         
@@ -43,6 +43,7 @@ body {
 }
 .logo-text {
   font-size: 30px;
+  letter-spacing: 3px;
   color:blue;
 }
 .layout {
