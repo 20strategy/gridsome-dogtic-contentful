@@ -1,28 +1,24 @@
 <template>
   <Layout>
+    <g-image class="heroimage" 
+    alt="cute dogs" 
+    src="https://bit.ly/2ZTz2zr"/>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <g-image class="heroimage" alt="cute dogs" src="https://images.ctfassets.net/80g45033v4tf/2cH8HVPxxzlIJEDSxqgxI4/f3a175c7748c40783ad18addcea304bc/welcome_to.jpg" width="600" />
-
+    <div class="indexpage-text">
     <h1>Hello, world!</h1>
-
     <p>
       Hi, My name is Andrew Kim and I am the co-founder of DOGTIC.COM. I started 
       this website/blog to provide quality products for dogs and good information for 
-      dog-parents
-    </p>
+      dog-parents</p>
     <p>
      Although dogs have been with us more than 10,000+ years, 
-     we are still learning new things about our furry companions
-    </p>
+     we are still learning new things about our furry companions</p>
     <p>
      My first commitment to comsumers is that we will provide good products in quality 
      and looks. Second, we will try hard to bring you good information on dogs. 
      From picking the best breed to pottying training your puppy, we will make 
-     sure to deliver you with good contents.
-    </p>
-
+     sure to deliver you with good contents.</p>
+   </div>
     
     <g-image class="heroimage" alt="cute dogs" src="~/frontpage1.jpg" width="600" />
     <p class="home-links">
@@ -41,21 +37,4 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-.heroimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 98%;
-  border-radius:20px;
-}
-h1,h2{
-  color:#555;
-}
-p {
-  color: #666
-}
-</style>
+

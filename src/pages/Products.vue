@@ -54,21 +54,3 @@ export default {
 
 </script>
 
-<style>
-div {
-  margin-bottom: 60px;
-}
-a {
-  color:#999;
-  text-decoration:none;
-}
-a:hover {
-   color: #666;
-   text-decoration: none;
-}
-
-a: {
-  color: red;
-  text-decoration: none;
-}
-</style>

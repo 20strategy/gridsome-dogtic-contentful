@@ -1,0 +1,57 @@
+   /*  ENTIRE WEBSITE */
+@font-face {
+    font-family: Jost;
+    src: url('../assets/Jost-Regular.ttf');
+    font-weight: normal;}
+
+body {
+    font-family: 'Jost','Helvetica','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+    background-color: #ffffdb ;}
+
+h1,h2{color:#555;}
+
+p   {color: #666}
+
+div {margin-bottom: 60px;}
+a   {color:#999;
+    text-decoration:none;}
+a:hover {color: #666;
+    text-decoration:none;}
+  
+a: {color: red;
+    text-decoration: none;}
+.active {color: #000;}
+.logo-text {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color:blue;}
+.layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px;}
+.nav__link {margin-left: 20px;}
+.logoimage{margin-right:10px;}
+.home-links a {margin-right: 1rem;}
+
+ /* HOMEPAGE */
+.indexpage-text {
+    max-width: 550px;
+    margin-left:auto;
+    margin-right:auto;}
+.heroimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    border-radius:20px;}

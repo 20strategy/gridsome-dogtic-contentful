@@ -1,9 +1,9 @@
 <template>
   <Layout>
-
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
+    
     <h1 style="text-align:center">Blog</h1>
-    <div v-for="edge in $page.allContentfulBlog.edges" :key="edge.node.id">
+    
+    <div v-for="edge in $page.blogs.edges" :key="edge.node.id">
       <g-link :to= "edge.node.path" >
         <h2 style="margin-bottom:0.25em; text-align:center;"> {{edge.node.title}}</h2></g-link>
     
@@ -13,7 +13,7 @@
       
       <g-link :to= "edge.node.path" >Read more... </g-link>
       <br>
-      </div>
+    </div>
     
   </Layout>
 </template>
@@ -21,7 +21,7 @@
 
 <page-query>
 {
-  allContentfulBlog{
+  blogs: allContentfulBlog{
     edges{
       node{
         id
@@ -37,9 +37,7 @@
           }
           
         }
-        description
-        
-        
+        description  
       }
     }
   }
@@ -56,9 +54,6 @@ export default {
 </script>
 
 <style>
-div {
-  margin-bottom: 60px;
-}
 a {
   color:#999;
   text-decoration:none;
