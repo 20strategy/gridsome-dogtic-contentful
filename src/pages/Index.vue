@@ -3,7 +3,7 @@
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <g-image class="heroimage" alt="cute dogs" src="~/frontpage.jpg" width="600" />
+    <g-image class="heroimage" alt="cute dogs" src="https://images.ctfassets.net/80g45033v4tf/2cH8HVPxxzlIJEDSxqgxI4/f3a175c7748c40783ad18addcea304bc/welcome_to.jpg" width="600" />
 
     <h1>Hello, world!</h1>
 
@@ -50,6 +50,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 98%;
+  border-radius:20px;
 }
 h1,h2{
   color:#555;
