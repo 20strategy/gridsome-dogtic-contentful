@@ -3,7 +3,7 @@
     <header class="header">
       <strong>
         
-        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic3.svg" width="120" /></g-link>
+        <g-link exact to="/"><g-image class="logoimage" alt="logo" src="~/dogtic-logo.svg" width="150" /></g-link>
       </strong>
       <nav class="nav">
         

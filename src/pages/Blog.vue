@@ -1,7 +1,6 @@
 <template>
   <Layout>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
     <h1 style="text-align:center">Blog</h1>
     <div v-for="edge in $page.allContentfulBlog.edges" :key="edge.node.id">
@@ -18,7 +17,6 @@
     
   </Layout>
 </template>
-
 
 
 <page-query>

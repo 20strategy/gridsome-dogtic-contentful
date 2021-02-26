@@ -11,7 +11,7 @@
       <g-image :src="edge.node.image.file.url" style="width:100%; 
       object-fit:contain;" :alt="edge.node.image.title" />
         <p>${{edge.node.price}}</p>
-        <g-link :to="edge.node.path">product</g-link>
+        <g-link :to="edge.node.path">More Info...</g-link>
       
     
       <br>
