@@ -34,7 +34,6 @@ a:hover {color: #666;
 a: {color: red;
     text-decoration: none;}
 nav a:hover {
-    text-transform:lowercase;
     color: #111;
 }
 .active {

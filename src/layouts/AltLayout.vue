@@ -13,6 +13,12 @@
         <g-link class="nav__link" to="/about/">About</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
         <g-link class="nav__link" to="/products/">Shop</g-link>
+         <g-link class="snipcart-checkout nav__button button button--transparent nav__link">
+                <span class="button__icon nav__button-icon">
+                    <g-image src="~/assets/cart-1.svg" width="23" height="15"></g-image>
+                </span>
+                <span class="snipcart-items-count nav__total-items button__text" style="font-size:12px;">0</span>
+            </g-link>
        
       </nav>
     </header>
@@ -34,4 +40,6 @@ query {
   }
 }
 </static-query>
+
+
 
