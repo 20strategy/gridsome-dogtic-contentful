@@ -2,7 +2,7 @@
   <Layout>
     <g-image class="heroimage" 
     alt="cute dogs" 
-    src="https://bit.ly/37Q5dnM"/>
+    src="https://bit.ly/37Q5dnM" width="600"/>
 
     <div class="indexpage-text">
     <h1>Welcome To Dogtic.com</h1>
@@ -20,10 +20,13 @@
      sure to deliver you with good contents.</p>
    </div>
     
-    <g-image class="heroimage" alt="cute dogs" src="~/frontpage1.jpg" width="600" />
+    <br>
+     <g-image class="heroimage" alt="cute dogs" src="https://images.ctfassets.net/80g45033v4tf/1EEVS52Z2Zh6GzSuc3QRFK/e73b21c43c4033e7297ae6a14a2f68fb/frontpage1.jpg" width="600" />
+
 
   </Layout>
 </template>
+
 
 <script>
 export default {

@@ -34,6 +34,9 @@ a:hover {color: #666;
 a: {color: red;
     text-decoration: none;}
 
+nav {
+    height: 20px;}
+
 nav a:hover {
     color: #111;
 }
@@ -60,8 +63,9 @@ nav a:hover {
     margin-bottom: 15px;
     height: 80px;}
 .nav__link {
-    font-size: 20px;
-    margin-left: 30px;
+    font-size: 15px;
+    margin-left: 20px;
+
 }
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}

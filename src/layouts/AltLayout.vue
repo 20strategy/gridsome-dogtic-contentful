@@ -1,20 +1,20 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
+  
         
         <g-link exact to="/">
         <span class="logo-text">dogtic.</span>
         <span class="logo-text2">com</span>
         </g-link>
-      </strong>
+  
       <nav class="nav">
    
-        <g-link class="nav__link" to="/about/">About</g-link>
-        <g-link class="nav__link" to="/blog/">Blog</g-link>
-        <g-link class="nav__link" to="/products/">Shop</g-link>
-         <g-link class="snipcart-checkout nav__link"> 
-           <g-image class="shoping-cart" src="~/assets/cart-1.svg" width="25" height="25" style="vertical-align: text-top" />
+        <g-link class="nav__link" to="/about/">ABOUT</g-link>
+        <g-link class="nav__link" to="/blog/">BLOG</g-link>
+        <g-link class="nav__link" to="/products/">SHOP</g-link>
+         <g-link class="snipcart-checkout nav__link" style="color:#777"> 
+           CART
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
             </g-link>
             
