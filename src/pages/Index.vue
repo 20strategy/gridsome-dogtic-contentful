@@ -2,7 +2,7 @@
   <Layout>
     <g-image class="heroimage" 
     alt="cute dogs" 
-    src="https://bit.ly/2ZTz2zr"/>
+    src="https://bit.ly/37Q5dnM"/>
 
     <div class="indexpage-text">
     <h1>Hello, world!</h1>

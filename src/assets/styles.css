@@ -48,6 +48,10 @@ a: {color: red;
     margin-bottom: 15px;
     height: 80px;}
 .nav__link {margin-left: 20px;}
+.nav__link:hover {
+    transform: scale(1.5);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
+}
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}
 
