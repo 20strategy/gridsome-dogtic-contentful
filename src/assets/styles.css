@@ -33,6 +33,7 @@ a:hover {color: #666;
   
 a: {color: red;
     text-decoration: none;}
+
 nav a:hover {
     color: #111;
 }
@@ -60,7 +61,8 @@ nav a:hover {
     height: 80px;}
 .nav__link {
     font-size: 20px;
-    margin-left: 30px;}
+    margin-left: 30px;
+}
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}
 
