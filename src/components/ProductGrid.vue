@@ -9,6 +9,14 @@
            
               <h3 class="project-title">{{ edge.node.title }}</h3>
                 <p>${{edge.node.price}}.00</p>
+                <button style="display:none"
+            class="snipcart-add-item cart-button"
+            :data-item-id="edge.node.id"
+            :data-item-name="edge.node.title"
+            :data-item-image="edge.node.image.file.url"
+            :data-item-price="edge.node.price"
+            :data-item-url="edge.node.path"
+            >Buy Now</button>
            
             </g-link>
         </div>
