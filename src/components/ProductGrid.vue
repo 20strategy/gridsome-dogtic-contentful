@@ -1,14 +1,14 @@
 <template>
  
       <div class ="projects">
-        <div class="project" v-for="edge in $page.blogs.edges" :key="edge.node.id">
+        <div class="project" v-for="edge in $page.products.edges" :key="edge.node.id">
             <g-link :to="edge.node.path" class="project-link">
-            <g-image :src="edge.node.picture1.file.url"
-                :alt="edge.node.picture1.title"
+            <g-image :src="edge.node.image.file.url"
+                :alt="edge.node.image.title"
                 class="thumbnail"/>
            
               <h3 class="project-title">{{ edge.node.title }}</h3>
-                <p>{{edge.node.excerpt}}</p>
+                <p>${{edge.node.price}}.00</p>
            
             </g-link>
         </div>
@@ -20,7 +20,7 @@
 <script>
 export default {
     props: {
-        blogs: {
+        products: {
             type: Array,
             required: true
         }

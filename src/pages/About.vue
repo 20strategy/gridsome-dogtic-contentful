@@ -3,7 +3,7 @@
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <g-image class="heroimage" alt="cool dogs" src="~/aboutpage.webp" width="700" />
+    <g-image class="about-page-hero-image" alt="cool dogs" src="~/aboutpage.webp" width="700" />
     <div class="indexpage-text">
     <h1>What Happens When You Try to Fake Your Death in Front of Your Dog?</h1>
     <p>
@@ -29,7 +29,7 @@
     </div>
 
     
-    <g-image class="heroimage" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
+    <g-image class="about-page-hero-image" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
     <p class="home-links">
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
