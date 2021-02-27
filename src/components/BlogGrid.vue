@@ -32,7 +32,7 @@ export default {
 .projects {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 .project {
   grid-column: auto / span 2;
@@ -43,7 +43,7 @@ export default {
 }
 .thumbnail {
   height: 430px;
-  width: 90%;
+  width: 95%;
   border-radius: 20px;
   object-fit: cover;
   transition: all 0.15s ease;
