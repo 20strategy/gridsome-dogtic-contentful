@@ -29,7 +29,7 @@
     </div>
 
     
-    <g-image class="about-page-hero-image" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
+    <g-image class="heroimage" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
     <p class="home-links">
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
