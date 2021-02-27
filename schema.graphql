@@ -1,0 +1,847 @@
+"""Add fields from field values."""
+directive @infer on OBJECT
+
+"""Add reference resolver."""
+directive @reference(
+  """Reference node by a custom field value."""
+  by: String = "id"
+) on FIELD_DEFINITION
+
+"""Return value from another field."""
+directive @proxy(from: String) on FIELD_DEFINITION
+
+"""Paginate a connection in a query. Only supported in page-query."""
+directive @paginate on FIELD
+
+input BelongsToFilterInput {
+  id: IDQueryOperatorInput
+  path: StringQueryOperatorInput
+  typeName: TypeNameQueryOperatorInput
+}
+
+type BlogPost implements Node {
+  id: ID!
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type BlogPostConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [BlogPostEdge]
+}
+
+type BlogPostEdge implements NodeConnectionEdge {
+  node: BlogPost
+  next: BlogPost
+  previous: BlogPost
+}
+
+input BlogPostFilterInput {
+  id: IDQueryOperatorInput
+}
+
+type ContentfulArticles implements Node {
+  id: ID!
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ContentfulArticlesConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ContentfulArticlesEdge]
+}
+
+type ContentfulArticlesEdge implements NodeConnectionEdge {
+  node: ContentfulArticles
+  next: ContentfulArticles
+  previous: ContentfulArticles
+}
+
+input ContentfulArticlesFilterInput {
+  id: IDQueryOperatorInput
+}
+
+type ContentfulAsset implements Node {
+  id: ID!
+  title: String
+  description: String
+  file: ContentfulAsset_File
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ContentfulAsset_File {
+  url(
+    """Width"""
+    width: Int
+
+    """Height"""
+    height: Int
+
+    """Fit"""
+    fit: ImageFit = cover
+
+    """Quality (default: 75)"""
+    quality: Int
+
+    """Blur level for base64 string"""
+    blur: Int
+
+    """Background color for 'contain'"""
+    background: String
+  ): Image
+  details: ContentfulAsset_File_Details
+  fileName: String
+  contentType: String
+}
+
+type ContentfulAsset_File_Details {
+  size: Int
+  image: ContentfulAsset_File_Details_Image
+}
+
+type ContentfulAsset_File_Details_Image {
+  width: Int
+  height: Int
+}
+
+input ContentfulAsset_File_Details_ImageFilterInput {
+  width: IntQueryOperatorInput
+  height: IntQueryOperatorInput
+}
+
+input ContentfulAsset_File_DetailsFilterInput {
+  size: IntQueryOperatorInput
+  image: ContentfulAsset_File_Details_ImageFilterInput
+}
+
+input ContentfulAsset_FileFilterInput {
+  url: ImageQueryOperatorInput
+  details: ContentfulAsset_File_DetailsFilterInput
+  fileName: StringQueryOperatorInput
+  contentType: StringQueryOperatorInput
+}
+
+type ContentfulAssetConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ContentfulAssetEdge]
+}
+
+type ContentfulAssetEdge implements NodeConnectionEdge {
+  node: ContentfulAsset
+  next: ContentfulAsset
+  previous: ContentfulAsset
+}
+
+input ContentfulAssetFilterInput {
+  id: IDQueryOperatorInput
+  title: StringQueryOperatorInput
+  description: StringQueryOperatorInput
+  file: ContentfulAsset_FileFilterInput
+}
+
+input ContentfulAssetInferredQueryOperatorInput {
+  id: IDQueryOperatorInput
+
+  """Use the id field instead."""
+  eq: ID
+
+  """Use the id field instead."""
+  ne: ID
+
+  """Use the id field instead."""
+  in: [ID]
+
+  """Use the id field instead."""
+  nin: [ID]
+}
+
+type ContentfulBlog implements Node {
+  id: ID!
+  title: String
+  date(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  createdAt(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  updatedAt(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  locale: String
+  slug: String
+  excerpt: String
+  author: String
+  picture1: ContentfulAsset
+  description(html: Boolean = false): ContentfulRichTextField
+  path(to: String = "default"): String
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ContentfulBlogConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ContentfulBlogEdge]
+}
+
+type ContentfulBlogEdge implements NodeConnectionEdge {
+  node: ContentfulBlog
+  next: ContentfulBlog
+  previous: ContentfulBlog
+}
+
+input ContentfulBlogFilterInput {
+  id: IDQueryOperatorInput
+  title: StringQueryOperatorInput
+  date: DateQueryOperatorInput
+  createdAt: DateQueryOperatorInput
+  updatedAt: DateQueryOperatorInput
+  locale: StringQueryOperatorInput
+  slug: StringQueryOperatorInput
+  excerpt: StringQueryOperatorInput
+  author: StringQueryOperatorInput
+  picture1: ContentfulAssetInferredQueryOperatorInput
+  description: StringQueryOperatorInput
+  path: StringQueryOperatorInput
+}
+
+type ContentfulImageWithAiTags implements Node {
+  id: ID!
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ContentfulImageWithAiTagsConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ContentfulImageWithAiTagsEdge]
+}
+
+type ContentfulImageWithAiTagsEdge implements NodeConnectionEdge {
+  node: ContentfulImageWithAiTags
+  next: ContentfulImageWithAiTags
+  previous: ContentfulImageWithAiTags
+}
+
+input ContentfulImageWithAiTagsFilterInput {
+  id: IDQueryOperatorInput
+}
+
+type ContentfulProduct implements Node {
+  id: ID!
+  title: String
+  date(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  createdAt(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  updatedAt(
+    """Date format"""
+    format: String
+
+    """Locale"""
+    locale: String
+  ): Date
+  locale: String
+  slug: String
+  price: Int
+  image: ContentfulAsset
+  description: String
+  path(to: String = "default"): String
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ContentfulProductConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ContentfulProductEdge]
+}
+
+type ContentfulProductEdge implements NodeConnectionEdge {
+  node: ContentfulProduct
+  next: ContentfulProduct
+  previous: ContentfulProduct
+}
+
+input ContentfulProductFilterInput {
+  id: IDQueryOperatorInput
+  title: StringQueryOperatorInput
+  date: DateQueryOperatorInput
+  createdAt: DateQueryOperatorInput
+  updatedAt: DateQueryOperatorInput
+  locale: StringQueryOperatorInput
+  slug: StringQueryOperatorInput
+  price: IntQueryOperatorInput
+  image: ContentfulAssetInferredQueryOperatorInput
+  description: StringQueryOperatorInput
+  path: StringQueryOperatorInput
+}
+
+scalar ContentfulRichTextField
+
+scalar Date
+
+input DateQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: Date
+
+  """Filter by property not equal to provided value."""
+  ne: Date
+
+  """Filter by property matching any of the provided values."""
+  in: [Date]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [Date]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+
+  """Filter by property greater than provided value."""
+  gt: Date
+
+  """Filter by property greater or equal to provided value."""
+  gte: Date
+
+  """Filter by property less than provided value."""
+  lt: Date
+
+  """Filter by property less than or equal to provided value."""
+  lte: Date
+
+  """Filter by date property equal to provided date value."""
+  dteq: Date
+
+  """Filter by property between provided values."""
+  between: [Date]
+}
+
+scalar File
+
+input IDQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: ID
+
+  """Filter by property not equal to provided value."""
+  ne: ID
+
+  """Filter by property matching any of the provided values."""
+  in: [ID]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [ID]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+}
+
+scalar Image
+
+enum ImageFit {
+  """Crop to cover both provided dimensions."""
+  cover
+
+  """Embed within both provided dimensions."""
+  contain
+
+  """
+  Ignore the aspect ratio of the input and stretch to both provided dimensions.
+  """
+  fill
+
+  """
+  Preserving aspect ratio, resize the image to be as large as possible while
+  ensuring its dimensions are less than or equal to both those specified.
+  """
+  inside
+
+  """
+  Preserving aspect ratio, resize the image to be as small as possible while
+  ensuring its dimensions are greater than or equal to both those specified.
+  Some of these values are based on the object-fit CSS property.
+  """
+  outside
+}
+
+input ImageQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: Image
+
+  """Filter by property not equal to provided value."""
+  ne: Image
+
+  """Filter by property matching any of the provided values."""
+  in: [Image]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [Image]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+
+  """Filter by property matching provided regular expression."""
+  regex: String
+}
+
+input IntQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: Int
+
+  """Filter by property not equal to provided value."""
+  ne: Int
+
+  """Filter by property matching any of the provided values."""
+  in: [Int]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [Int]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+
+  """Filter by property greater than provided value."""
+  gt: Int
+
+  """Filter by property greater or equal to provided value."""
+  gte: Int
+
+  """Filter by property less than provided value."""
+  lt: Int
+
+  """Filter by property less than or equal to provided value."""
+  lte: Int
+
+  """Filter by property between provided values."""
+  between: [Int]
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+input JSONQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: JSON
+
+  """Filter by property not equal to provided value."""
+  ne: JSON
+
+  """Filter by property matching any of the provided values."""
+  in: [JSON]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [JSON]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+
+  """Filter by property matching provided regular expression."""
+  regex: String
+}
+
+type Metadata {
+  siteName: String
+  siteDescription: String
+  siteUrl: String
+  pathPrefix: String
+}
+
+interface Node {
+  id: ID!
+}
+
+type NodeBelongsTo implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [NodeBelongsToEdge]
+}
+
+type NodeBelongsToEdge implements NodeConnectionEdge {
+  node: Node
+  next: Node
+  previous: Node
+}
+
+interface NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [NodeConnectionEdge]
+}
+
+interface NodeConnectionEdge {
+  node: Node
+  next: Node
+  previous: Node
+}
+
+type Page {
+  path: String!
+  context: JSON!
+}
+
+input PageFilterInput {
+  path: StringQueryOperatorInput
+  context: JSONQueryOperatorInput
+}
+
+type PageInfo {
+  perPage: Int!
+  currentPage: Int!
+  totalPages: Int!
+  totalItems: Int!
+  hasPreviousPage: Boolean!
+  hasNextPage: Boolean!
+  isFirst: Boolean!
+  isLast: Boolean!
+}
+
+type Products implements Node {
+  id: ID!
+  belongsTo(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument!]
+    filter: BelongsToFilterInput
+  ): NodeBelongsTo
+}
+
+type ProductsConnection implements NodeConnection {
+  totalCount: Int!
+  pageInfo: PageInfo!
+  edges: [ProductsEdge]
+}
+
+type ProductsEdge implements NodeConnectionEdge {
+  node: Products
+  next: Products
+  previous: Products
+}
+
+input ProductsFilterInput {
+  id: IDQueryOperatorInput
+}
+
+type Query {
+  contentfulProduct(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): ContentfulProduct
+  allContentfulProduct(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for ContentfulProduct nodes."""
+    filter: ContentfulProductFilterInput
+  ): ContentfulProductConnection
+  contentfulBlog(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): ContentfulBlog
+  allContentfulBlog(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for ContentfulBlog nodes."""
+    filter: ContentfulBlogFilterInput
+  ): ContentfulBlogConnection
+  contentfulImageWithAiTags(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): ContentfulImageWithAiTags
+  allContentfulImageWithAiTags(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for ContentfulImageWithAiTags nodes."""
+    filter: ContentfulImageWithAiTagsFilterInput
+  ): ContentfulImageWithAiTagsConnection
+  contentfulArticles(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): ContentfulArticles
+  allContentfulArticles(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for ContentfulArticles nodes."""
+    filter: ContentfulArticlesFilterInput
+  ): ContentfulArticlesConnection
+  contentfulAsset(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): ContentfulAsset
+  allContentfulAsset(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for ContentfulAsset nodes."""
+    filter: ContentfulAssetFilterInput
+  ): ContentfulAssetConnection
+  blogPost(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): BlogPost
+  allBlogPost(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for BlogPost nodes."""
+    filter: BlogPostFilterInput
+  ): BlogPostConnection
+  products(
+    id: ID
+    path: String
+
+    """Will return an error if not nullable."""
+    nullable: Boolean = false
+  ): Products
+  allProducts(
+    sortBy: String = "date"
+    order: SortOrder = DESC
+
+    """Defaults to 25 when page is provided."""
+    perPage: Int
+    skip: Int = 0
+    limit: Int
+    page: Int
+    sort: [SortArgument]
+
+    """Filter for Products nodes."""
+    filter: ProductsFilterInput
+  ): ProductsConnection
+  metadata: Metadata
+  metaData: Metadata @deprecated(reason: "Use Query.metadata instead.")
+  page(path: String!): Page
+  allPage(
+    """Filter pages."""
+    filter: PageFilterInput
+  ): [Page]
+}
+
+input SortArgument {
+  by: String! = "date"
+  order: SortOrder = DESC
+}
+
+enum SortOrder {
+  """Sort ascending"""
+  ASC
+
+  """Sort descending"""
+  DESC
+}
+
+input StringQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: String
+
+  """Filter by property not equal to provided value."""
+  ne: String
+
+  """Filter by property matching any of the provided values."""
+  in: [String]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [String]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+
+  """Filter by property matching provided regular expression."""
+  regex: String
+}
+
+enum TypeName {
+  ContentfulProduct
+  ContentfulBlog
+  ContentfulImageWithAiTags
+  ContentfulArticles
+  ContentfulAsset
+  BlogPost
+  Products
+}
+
+input TypeNameQueryOperatorInput {
+  """Filter by property of (strict) equality."""
+  eq: TypeName
+
+  """Filter by property not equal to provided value."""
+  ne: TypeName
+
+  """Filter by property matching any of the provided values."""
+  in: [TypeName]
+
+  """Filter by property not matching any of the provided values."""
+  nin: [TypeName]
+
+  """
+  Filter nodes that contain the field, including nodes where the field value is null.
+  """
+  exists: Boolean
+}
+

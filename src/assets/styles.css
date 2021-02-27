@@ -4,6 +4,16 @@
     src: url('../assets/Jost-Regular.ttf');
     font-weight: normal;}
 
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 1rem ; 
+}
+.layout {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 2rem ;}
+
 body {
     font-family: 'Jost','Helvetica','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
     margin:0;
@@ -42,11 +52,6 @@ nav a:hover {
     color:red;
     letter-spacing: 1px;
 }
-
-.layout {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;}
   
 .header {
     display: flex;
@@ -57,10 +62,6 @@ nav a:hover {
 .nav__link {
     font-size: 20px;
     margin-left: 30px;}
-.nav__link:hover {
-    transform: scale(1.5);
-    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
-}
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}
 
@@ -99,12 +100,20 @@ nav a:hover {
     width: 99%;
     margin-left: auto;
     margin-right: auto;}
-.bannerimage, .blog-text img {
+.bannerimage, .blog-text img, .product-image {
     border-radius: 20px;
-    width:100%;}
+    width:100%;
+    max-height:600px;
+    object-fit:cover;}
 
 .blog-text {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
+.blogposts img {
+    width: 100%;
+    }
+.product-title {
+      text-transform: uppercase;
+    }
