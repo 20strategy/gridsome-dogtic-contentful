@@ -7,8 +7,8 @@
                 :alt="edge.node.picture1.title"
                 class="thumbnail"/>
            
-              <h3 class="project-title">{{ edge.node.title }}</h3>
-                <p>{{edge.node.excerpt}}</p>
+              <h2 class="blog-title">{{ edge.node.title }}</h2>
+                <p class="blog-excerpt">{{edge.node.excerpt}}</p>
            
             </g-link>
         </div>
@@ -49,11 +49,25 @@ export default {
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
 }
-.project-title {
-  font-size: 1rem;
-  color: var(--color-contrast);
-  margin: 2rem 0 1rem 0;
+.blog-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0 0 0;
+  max-width: 600px;
+  width: 85%;
+  margin-left:auto;
+  margin-right:auto;
 }
+.blog-excerpt {
+  font-size: 0.88rem;
+  color: #999;
+  margin: 0.5rem 0 0 0;
+  max-width: 600px;
+  width: 85%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .categories {
   font-size: 0.8rem;
   color: var(--color-contrast-1);

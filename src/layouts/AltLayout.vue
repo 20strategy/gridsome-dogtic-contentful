@@ -5,7 +5,7 @@
         
         <g-link exact to="/">
         <span class="logo-text">dogtic.</span>
-        <span style="color:red; letter-spacing:1px;">com</span>
+        <span class="logo-text2">com</span>
         </g-link>
       </strong>
       <nav class="nav">

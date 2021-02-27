@@ -52,7 +52,7 @@ export default {
 .project-title {
   font-size: 1rem;
   color: var(--color-contrast);
-  margin: 2rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
 }
 .categories {
   font-size: 0.8rem;
@@ -71,6 +71,7 @@ export default {
 
 @media (min-width: 920px) {
   .project {
+    display: block;
     grid-column: auto / span 1;
   }
   .project:nth-child(3n+1) {

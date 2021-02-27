@@ -18,6 +18,7 @@
         title
         excerpt
         slug
+        author
         path
         picture1 {
           id

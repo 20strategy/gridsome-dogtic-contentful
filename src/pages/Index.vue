@@ -5,7 +5,7 @@
     src="https://bit.ly/37Q5dnM"/>
 
     <div class="indexpage-text">
-    <h1>Hello, world!</h1>
+    <h1>Welcome To Dogtic.com</h1>
     <p>
       Hi, My name is Andrew Kim and I am the co-founder of DOGTIC.COM. I started 
       this website/blog to provide quality products for dogs and good information for 
