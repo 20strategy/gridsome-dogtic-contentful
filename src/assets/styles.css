@@ -1,4 +1,4 @@
-   /*  ENTIRE WEBSITE */
+   /*  -----ENTIRE WEBSITE------ */
 @font-face {
     font-family: Jost;
     src: url('../assets/Jost-Regular.ttf');
@@ -11,9 +11,9 @@ body {
     line-height: 1.5;
     background-color: #ffffdb ;}
 
-h1,h2{color:#555;}
+h1,h2{color:#444;}
 
-p   {color: #666}
+p ,ul  {color: #666}
 
 div {margin-bottom: 60px;}
 a   {color:#999;
@@ -23,11 +23,18 @@ a:hover {color: #666;
   
 a: {color: red;
     text-decoration: none;}
+
 .active {color: #000;}
 .logo-text {
     font-size: 30px;
     letter-spacing: 3px;
     color:blue;}
+
+.container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
 .layout {
     max-width: 1000px;
     margin: 0 auto;
@@ -44,7 +51,7 @@ a: {color: red;
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}
 
- /* HOMEPAGE */
+ /* ----HOMEPAGE------- */
 .indexpage-text {
     max-width: 550px;
     margin-left:auto;

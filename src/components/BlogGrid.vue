@@ -1,25 +1,26 @@
 <template>
-    <div class="projects">
-        <div class="project" v-for="item in projects" :key="item.node.id">
-            <g-link :to="item.node.path" class="project-link">
-            <g-image
-                :src="item.node.thumbnail"
-                :alt="item.node.title"
-                class="thumbnail"
-            />
-            <h3 class="project-title">{{ item.node.title }}</h3>
-            <div class="categories">
-                <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span>
-            </div>
+ 
+      <div class ="projects">
+        <div class="project" v-for="edge in $page.blogs.edges" :key="edge.node.id">
+            <g-link :to="edge.node.path" class="project-link">
+            <g-image :src="edge.node.picture1.file.url"
+                :alt="edge.node.picture1.title"
+                class="thumbnail"/>
+           
+              <h3 class="project-title">{{ edge.node.title }}</h3>
+                <p>{{edge.node.excerpt}}</p>
+           
             </g-link>
         </div>
-    </div>
+        </div>
+        
+    
 </template>
 
 <script>
 export default {
     props: {
-        projects: {
+        blogs: {
             type: Array,
             required: true
         }
@@ -30,8 +31,8 @@ export default {
 <style scoped>
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
 }
 .project {
   grid-column: auto / span 2;
@@ -41,7 +42,8 @@ export default {
   text-decoration: none;
 }
 .thumbnail {
-  height: 200px;
+  height: 430px;
+  width: 430px;
   object-fit: cover;
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
@@ -71,9 +73,8 @@ export default {
     grid-column: auto / span 1;
   }
   .project:nth-child(3n+1) {
-    grid-column: auto / span 2;
+    grid-column: auto / span 1;
   }
 }
 
 </style>
-

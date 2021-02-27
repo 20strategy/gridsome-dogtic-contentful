@@ -2,7 +2,9 @@
   <Layout>
     
     <h1 style="text-align:center">Blog</h1>
-    
+    <BlogGrid :blogs="$page.blogs.edges" />
+
+    <!-- 
     <div v-for="edge in $page.blogs.edges" :key="edge.node.id">
       <g-link :to= "edge.node.path" >
         <h2 style="margin-bottom:0.25em; text-align:center;"> {{edge.node.title}}</h2></g-link>
@@ -13,7 +15,8 @@
       
       <g-link :to= "edge.node.path" >Read more... </g-link>
       <br>
-    </div>
+    </div> 
+    -->
     
   </Layout>
 </template>
@@ -45,7 +48,12 @@
 </page-query>
 
 <script>
+import BlogGrid from "@/components/BlogGrid" 
+
 export default {
+  components: {
+    BlogGrid,
+  },
   metaInfo: {
     title: 'Dogtic Blog'
   }

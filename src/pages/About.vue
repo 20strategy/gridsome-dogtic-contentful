@@ -4,9 +4,8 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
     <g-image class="heroimage" alt="cool dogs" src="~/aboutpage.webp" width="700" />
-
+    <div class="indexpage-text">
     <h1>What Happens When You Try to Fake Your Death in Front of Your Dog?</h1>
-
     <p>
       Do you think he would be fooled. 
       I am sure everyone has tried this at least once.  
@@ -27,6 +26,7 @@
      From picking the best breed to pottying training your puppy, we will make 
      sure to deliver you with good contents.
     </p>
+    </div>
 
     
     <g-image class="heroimage" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
