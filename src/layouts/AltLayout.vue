@@ -1,44 +1,24 @@
 <template>
   <div class="layout">
-    <header class="container">
-  
-        
+    <header class="container">       
         <g-link exact to="/">
-        <span class="logo-text">dogtic.</span>
+        <span class="logo-text">DOGTIC.</span>
         <span class="logo-text2">com</span>
-        </g-link>
-  
+        </g-link> 
       <nav class="nav">
-   
         <g-link class="nav__link" to="/about/">ABOUT</g-link>
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
          <g-link class="snipcart-checkout nav__link" style="color:#777"> 
            CART
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
-            </g-link>
-            
-       
-      </nav>
-
- 
+            </g-link>      
+      </nav> 
     </header>
     <slot/>
 
-
-
-   
-
-
-
-
-
-
-
-
    <footer>
     <p class="home-links">
-      
       <p style="text-align:center">Email: bark@dogtic.com
       <br>All rights have been reserved.</p>
     </p>
@@ -66,8 +46,6 @@ query {
     padding: 0  ; 
     display: flex;
 }
-
-
 .column1 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
   flex-basis: 50%; /* sets initial width to 70% */
@@ -89,11 +67,18 @@ query {
   .container {
       /* it place the items in vertical direction */
     flex-direction: column;
+    height:110px;
   }
   .box {
     text-align: center;
   }
-
+  nav {
+   
+    margin-bottom: 30px;
+  }
+  .logo-text {
+    text-transform: lowercase;
+  }
 
 }
 </style>

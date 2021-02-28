@@ -52,12 +52,7 @@ nav a:hover {
     letter-spacing: 1px;
 }
   
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    height: 80px;}
+
 .nav__link {
     font-size: 15px;
     margin-left: 20px;
