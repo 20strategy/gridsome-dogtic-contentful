@@ -70,8 +70,7 @@ nav a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    border-radius:20px;}
+    width: 95%;}
 
 /* ----ABOUT PAGE------- */
 .about-page-hero-image {
@@ -79,25 +78,17 @@ nav a:hover {
     object-fit: cover;
     max-width: 700px;
     width: 98%;
-    border-radius: 20px;
     margin-left:auto;
     margin-right: auto;
  
 }
 /* ----PRODUCT GRID PAGE------- */
-.product-grid-image {
-    border-radius: 25px;
-}
+
 
 
 /* ----BLOG PAGE------- */
-.blog-page {
-    max-width: 800px;
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;}
+
 .bannerimage, .blog-text img, .product-image {
-    border-radius: 20px;
     width:100%;
     max-height:600px;
     object-fit:cover;}

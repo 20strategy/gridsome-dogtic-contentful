@@ -1,8 +1,7 @@
 <template>
     <Layout>
 
-      
-      <div class="container1">
+      <div class="container">
           <div class="column1 box">
             <g-image class="product-image" 
             :src="$page.product.image.file.url" /></div>
@@ -22,6 +21,7 @@
             </div>
           </div>
       </div>
+    
 
     
   </Layout>
@@ -66,10 +66,11 @@ export default {
 
 
 <style scoped>
-.container1{
+
+.container{
     display: flex;
-  
     max-width: 1050px;
+    width: 95%;
     margin: 0 auto;
     padding: 0  ; 
  
@@ -104,8 +105,6 @@ export default {
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 1rem;
-
-
 }
 
 

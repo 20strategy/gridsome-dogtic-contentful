@@ -48,3 +48,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.blog-page {
+    max-width: 800px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;}
+
+</style>

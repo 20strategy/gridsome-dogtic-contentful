@@ -38,6 +38,7 @@ export default {
 </script>
 
 <style scoped>
+
 .projects {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -53,7 +54,6 @@ export default {
 .thumbnail {
   height: 450px;
   width: 95%;
-  border-radius: 20px;
   object-fit: cover;
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);

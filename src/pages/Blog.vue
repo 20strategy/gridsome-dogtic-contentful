@@ -1,16 +1,10 @@
 <template>
-
-
 <Layout>
-<div class="between-header-footer">
-    
-<h1 style="text-align:center">Blog</h1> 
-<BlogGrid :blogs="$page.blogs.edges" />
-
-    
+  <div class="between-header-footer">
+  <h1 style="text-align:center">Blog</h1> 
+  <BlogGrid :blogs="$page.blogs.edges" />
   </div>
-  </Layout>
-
+</Layout>
 </template>
 
 
@@ -42,7 +36,6 @@
 
 <script>
 import BlogGrid from "@/components/BlogGrid" 
-
 export default {
   components: {
     BlogGrid,
@@ -51,21 +44,9 @@ export default {
     title: 'Dogtic Blog'
   }
 }
-
 </script>
 
-<style>
-a {
-  color:#999;
-  text-decoration:none;
-}
-a:hover {
-   color: #666;
-   text-decoration: none;
-}
 
-a: {
-  color: red;
-  text-decoration: none;
-}
+
+<style scoped>
 </style>

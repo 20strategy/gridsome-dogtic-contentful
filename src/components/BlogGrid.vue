@@ -46,7 +46,6 @@ export default {
 .thumbnail {
   height: 430px;
   width: 95%;
-  border-radius: 20px;
   object-fit: cover;
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
