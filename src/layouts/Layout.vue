@@ -49,7 +49,6 @@ query {
 .column1 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
   flex-basis: 50%; /* sets initial width to 70% */
-  background:red;
 }
 .column2 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
