@@ -15,13 +15,13 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
     type: 'text/javascript',
     src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
-    body: false,
+    body: true,
   });
 
   head.script.push({
     type: 'text/javascript',
     src: 'https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js',
-    body: false,
+    body: true,
     id: 'snipcart',
     'data-api-key': 'YzMxODU1YWYtOGIzOS00YmFlLTkxNDktNzNiOTgxYjJjYjRkNjM3NDQwMTE2MzAyNzQ0MDkz',
     'data-config-add-product-behavior' : 'none',
