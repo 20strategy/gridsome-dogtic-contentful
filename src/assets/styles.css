@@ -1,4 +1,4 @@
-   /*  -----ENTIRE WEBSITE------ */
+   /*  -----UNIVERSAL CSS------ */
 @font-face {
     font-family: Jost;
     src: url('../assets/Jost-Regular.ttf');
@@ -21,20 +21,14 @@ h1,h2{color:#444;}
 
 p ,ul  {color: #666}
 
-div {margin-bottom: 60px;}
-a   {color:#999;
-    text-decoration:none;}
-a:hover {color: #666;
-    text-decoration:none;}
-  
+div {margin-bottom: 50px;}
+a   {color:#999;text-decoration:none}
+a:hover {color: #666;}
 a: {color: red;}
 
-nav {
-    height: 20px;}
+nav {height: 20px;}
 
-nav a:hover {
-    color: #111;
-}
+nav a:hover {color: #111;}
 .active {
     color: #111;}
 
@@ -42,14 +36,8 @@ nav a:hover {
     font-size: 30px;
     letter-spacing: 3px;
     color:blue;}
-.logo-text:hover {
-    color:rgb(86, 86, 240)
-}
-
-.logo-text2 {
-    color:red;
-    letter-spacing: 1px;
-}
+.logo-text:hover {color:rgb(86, 86, 240)}
+.logo-text2 {color:red;letter-spacing: 1px;}
   
 
 .nav__link {
@@ -66,23 +54,7 @@ nav a:hover {
     width: 85%;
     margin-left:auto;
     margin-right:auto;}
-.heroimage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;}
 
-/* ----ABOUT PAGE------- */
-.about-page-hero-image {
-    display: block;
-    object-fit: cover;
-    max-width: 700px;
-    width: 98%;
-    margin-left:auto;
-    margin-right: auto;
- 
-}
-/* ----PRODUCT GRID PAGE------- */
 
 
 

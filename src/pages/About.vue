@@ -1,10 +1,7 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <g-image class="about-page-hero-image" alt="cool dogs" src="~/aboutpage.webp" width="700" />
-    <div class="indexpage-text">
+    <g-image class="about-hero-image" alt="cool dogs" src="~/aboutpage.webp" width="700" />
+    <div class="about-text">
     <h1>What Happens When You Try to Fake Your Death in Front of Your Dog?</h1>
     <p>
       Do you think he would be fooled. 
@@ -28,12 +25,11 @@
     </p>
     </div>
 
-    
-    <g-image class="heroimage" alt="cute dogs" src="~/aboutpage1.webp" width="600" />
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+ 
+    <g-image alt="cute dogs" class="heroimage" src="~/aboutpage1.webp" />
+    <br>
+   
+   
 
   </Layout>
 </template>
@@ -48,3 +44,27 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.about-hero-image {
+    display: block;
+    object-fit: cover;
+    max-width: 700px;
+    width: 98%;
+    margin-left:auto;
+    margin-right: auto; 
+}
+.heroimage {
+  display: block;
+  max-width: 1050px;
+  width: 95%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.about-text {
+    max-width: 550px;
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;}
+</style>

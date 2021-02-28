@@ -3,7 +3,7 @@
     <div class="between-header-footer">
     <g-image class="heroimage" 
     alt="cute dogs" 
-    src="https://bit.ly/37Q5dnM" width="600"/>
+    src="https://bit.ly/37Q5dnM" />
 
     <div class="indexpage-text">
     <h1>Welcome To Dogtic.com</h1>
@@ -32,9 +32,17 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Welcome to Dogtic.com'
   }
 }
 </script>
 
-
+<style scoped>
+.heroimage {
+  display: block;
+  max-width: 1050px;
+  width: 95%;
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
