@@ -4,11 +4,7 @@
     src: url('../assets/Jost-Regular.ttf');
     font-weight: normal;}
 
-.container{
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 1rem ; 
-}
+
 .layout {
     max-width: 1050px;
     margin: 0 auto;

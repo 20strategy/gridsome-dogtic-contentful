@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <header class="container">
   
         
         <g-link exact to="/">
@@ -20,8 +20,22 @@
             
        
       </nav>
+
+ 
     </header>
     <slot/>
+
+
+
+   
+
+
+
+
+
+
+
+
    <footer>
     <p class="home-links">
       
@@ -39,5 +53,49 @@ query {
   }
 }
 </static-query>
+
+<style>
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0  ; 
+    display: flex;
+}
+
+
+.column1 {
+  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+  flex-basis: 50%; /* sets initial width to 70% */
+}
+.column2 {
+  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+  flex-basis: 50%; /* sets initial width to 70% */  
+  text-align: right;
+
+}
+.box {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+@media only screen and (max-width: 900px) {
+
+  .container {
+      /* it place the items in vertical direction */
+    flex-direction: column;
+  }
+  .box {
+    text-align: center;
+  }
+
+
+}
+</style>
 
 
