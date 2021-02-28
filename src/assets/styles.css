@@ -27,8 +27,7 @@ a   {color:#999;
 a:hover {color: #666;
     text-decoration:none;}
   
-a: {color: red;
-    text-decoration: none;}
+a: {color: red;}
 
 nav {
     height: 20px;}
