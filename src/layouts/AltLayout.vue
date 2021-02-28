@@ -76,7 +76,7 @@ query {
    
     margin-bottom: 30px;
   }
-  .logo-text {
+  .logo-text, .nav__link {
     text-transform: lowercase;
   }
 
