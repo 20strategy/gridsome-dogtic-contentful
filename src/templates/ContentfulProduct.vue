@@ -2,7 +2,7 @@
     <Layout>
 
       
-      <div class="container">
+      <div class="container1">
           <div class="column1 box">
             <g-image class="product-image" 
             :src="$page.product.image.file.url" /></div>
@@ -66,8 +66,13 @@ export default {
 
 
 <style scoped>
-.container{
-    display:flex;
+.container1{
+    display: flex;
+  
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0  ; 
+ 
 }
 
 .column1 {

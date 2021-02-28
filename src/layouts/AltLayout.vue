@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header class="container">       
+    <header class="header">       
         <g-link exact to="/">
         <span class="logo-text">DOGTIC.</span>
         <span class="logo-text2">com</span>
@@ -35,7 +35,7 @@ query {
 </static-query>
 
 <style>
-.container{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +64,7 @@ query {
 
 @media only screen and (max-width: 900px) {
 
-  .container {
+  .header {
       /* it place the items in vertical direction */
     flex-direction: column;
     height:110px;
