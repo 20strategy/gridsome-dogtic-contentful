@@ -52,7 +52,6 @@ export default {
   text-decoration: none;
 }
 .thumbnail {
-  height: 450px;
   width: 95%;
   object-fit: cover;
   transition: all 0.15s ease;
@@ -78,7 +77,7 @@ export default {
   box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
 }
 
-@media (min-width: 920px) {
+@media (min-width: 320px) {
   .project {
     display: block;
     grid-column: auto / span 1;
