@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div>
     <header class="header">       
         <g-link exact to="/">
         <span class="logo-text">DOGTIC.</span>
@@ -43,7 +43,7 @@ query {
     height: 80px;
     max-width: 1050px;
     margin: 0 auto;
-    padding: 0  ; 
+    padding: 0 2rem ; 
     display: flex;
 }
 .column1 {
@@ -79,6 +79,7 @@ query {
   .logo-text, .nav__link {
     text-transform: lowercase;
   }
+  
 
 }
 </style>

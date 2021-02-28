@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <div class="between-header-footer">
     <g-image class="heroimage" 
     alt="cute dogs" 
     src="https://bit.ly/37Q5dnM" width="600"/>
@@ -23,7 +24,7 @@
     <br>
      <g-image class="heroimage" alt="cute dogs" src="https://images.ctfassets.net/80g45033v4tf/1EEVS52Z2Zh6GzSuc3QRFK/e73b21c43c4033e7297ae6a14a2f68fb/frontpage1.jpg" width="600" />
 
-
+  </div>
   </Layout>
 </template>
 

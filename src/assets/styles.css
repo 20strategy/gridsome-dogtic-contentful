@@ -5,10 +5,10 @@
     font-weight: normal;}
 
 
-.layout {
+.between-header-footer {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 0 1rem ;}
+    padding: 0 3px ;}
 
 body {
     font-family: 'Jost','Helvetica','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;
@@ -64,6 +64,7 @@ nav a:hover {
  /* ----HOMEPAGE------- */
 .indexpage-text {
     max-width: 550px;
+    width: 85%;
     margin-left:auto;
     margin-right:auto;}
 .heroimage {

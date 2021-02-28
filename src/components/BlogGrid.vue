@@ -1,5 +1,6 @@
 <template>
- 
+
+ <div class="between-header-footer">
       <div class ="projects">
         <div class="project" v-for="edge in $page.blogs.edges" :key="edge.node.id">
             <g-link :to="edge.node.path" class="project-link">
@@ -13,7 +14,8 @@
             </g-link>
         </div>
         </div>
-        
+        </div>
+    
     
 </template>
 

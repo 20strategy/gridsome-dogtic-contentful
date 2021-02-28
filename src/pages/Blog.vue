@@ -1,11 +1,16 @@
 <template>
-  <Layout>
+
+
+<Layout>
+<div class="between-header-footer">
     
-    <h1 style="text-align:center">Blog</h1>
-    <BlogGrid :blogs="$page.blogs.edges" />
+<h1 style="text-align:center">Blog</h1> 
+<BlogGrid :blogs="$page.blogs.edges" />
 
     
+  </div>
   </Layout>
+
 </template>
 
 

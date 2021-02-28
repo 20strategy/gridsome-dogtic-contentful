@@ -1,9 +1,12 @@
 <template>
-    <Layout>
+<Layout>
+    <div class="between-header-footer">
     <div class="blog-page">
+      <h1 style="text-align:center">{{$page.post.title}}</h1>
       <g-image class="bannerimage" :src="$page.post.picture1.file.url" width="250"  height="300" fit="fill" />
       <p class="blog-text" v-html="richTextToHTML($page.post.description)"></p>
   
+  </div>
   </div>
         
   </Layout>
