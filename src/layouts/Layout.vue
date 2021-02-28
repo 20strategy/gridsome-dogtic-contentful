@@ -15,6 +15,7 @@
             </g-link>      
       </nav> 
     </header>
+    <!-- <div class="special-circle"></div>  -->
     <slot/>
 
    <footer>
@@ -41,7 +42,7 @@ query {
     align-items: center;
     margin-bottom: 15px;
     height: 80px;
-    max-width: 1050px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 2rem ; 
    
@@ -61,6 +62,18 @@ query {
   padding: 0;
  
 }
+/*
+.special-circle {
+  position:absolute;
+  background-image: url(https://d2ekejdl2j2kuy.cloudfront.net/images/homepage/floating-figures/UGC-d2b55091.svg);
+  background-repeat:none;
+  top:20px;
+  left:150px;
+  width: 115px;
+  height:115px;
+  background-size:100%;
+}
+*/
 
 @media only screen and (max-width: 900px) {
 
@@ -75,11 +88,7 @@ query {
   nav {
    
     margin-bottom: 30px;
-  }
-  .logo-text, .nav__link {
-    text-transform: lowercase;
-  }
-  
+  } 
 
 }
 </style>
