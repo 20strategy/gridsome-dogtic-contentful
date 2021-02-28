@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 // import DefaultLayout from '~/layouts/Default.vue'
-import AltLayout from '~/layouts/AltLayout.vue'
+import Layout from '~/layouts/Layout.vue'
 import '~/assets/styles.css'
 
 export default function (Vue, { router, head, isClient }) {
@@ -27,6 +27,6 @@ export default function (Vue, { router, head, isClient }) {
     'data-config-add-product-behavior' : 'none',
   });
   // Set default layout as a global component
-  Vue.component('Layout', AltLayout)
+  Vue.component('Layout', Layout)
 }
 
