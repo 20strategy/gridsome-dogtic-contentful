@@ -1,16 +1,17 @@
 <template>
   <div>
     <header class="header">       
-        <g-link class="logo-text" exact to="/">
-        <span class="logo-text1">DOGTIC.</span>
-        <span class="logo-text2">com</span>
+        <g-link class="logo-text column-1" exact to="/">
+            <span class="logo-text1">DOGTIC.</span>
+            <span class="logo-text2">com</span>
+          
         </g-link> 
-      <nav class="nav">
+      <nav class="nav column-2">
         <g-link class="nav__link" to="/about/">ABOUT</g-link>
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
       <span class="nav snipcart-summary">
-        <g-link href="#" class="snipcart-customer-signin nav__link" style="color:#666" > 
+        <g-link href="#" class="snipcart-customer-signin nav__link"> 
            <g-image src="~/assets/login.svg" width="26px"/> </g-link>  
          <g-link class="snipcart-checkout nav__link" > 
          <g-image src="~/assets/cart.svg" width="26px"/>
@@ -47,19 +48,16 @@ query {
     height: 80px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 2rem ; 
-   
-}
+    padding: 0 2rem ;   }
+
 .column1 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
   flex-basis: 50%; /* sets initial width to 70% */
 }
 .column2 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-  flex-basis: 50%; /* sets initial width to 70% */  
-  text-align: right;
+  flex-basis: 50%; /* sets initial width to 70% */}
 
-}
 .box {
   margin: 0;
   padding: 0;
@@ -71,7 +69,7 @@ query {
     font-weight: normal;}  */
 
 
-.between-header-footer {
+.grid {
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 3px ;}
@@ -102,10 +100,12 @@ nav {height: 20px;}
     color: #111;}
 
 .logo-text1 {
+    display:inline-flex;
     font-size: 30px;
     letter-spacing: 3px;
     color:blue;}
-.logo-text1:hover {color:rgb(5, 5, 158)}
+.logo-text:hover {
+  transform: scale(1.05);}
 .logo-text2 {color:red;letter-spacing: -0.0rem;}
 
 .nav__link {
@@ -116,8 +116,7 @@ nav {height: 20px;}
 .logoimage{margin-right:10px;}
 .home-links a {margin-right: 1rem;}
 .snipcart-checkout.nav__link.active--exact.active {
-  text-decoration: none;
-}
+  text-decoration: none;}
 
 /*
 .special-circle {
@@ -136,7 +135,7 @@ nav {height: 20px;}
   .header {
     flex-direction: column;
     height:110px;}
-  .box {text-align: center;}
+ 
   nav {margin-bottom: 30px;} 
 
 }

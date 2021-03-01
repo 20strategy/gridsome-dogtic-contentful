@@ -1,30 +1,25 @@
 <template>
   <Layout>
-    <div class="between-header-footer">
-    <g-image class="heroimage" 
-    alt="cute dogs" 
-    src="https://bit.ly/37Q5dnM" />
+  
+    <g-image  class="heroimage" 
+              alt="cute dogs" 
+              src="https://bit.ly/37Q5dnM" />
 
     <div class="indexpage-text">
-    <h1>Welcome To Dogtic.com</h1>
+   
+    <h1>Walk and Play ♬</h1>
     <p>
-      Hi, My name is Andrew Kim and I am the co-founder of DOGTIC.COM. I started 
-      this website/blog to provide quality products for dogs and good information for 
-      dog-parents</p>
-    <p>
-     Although dogs have been with us more than 10,000+ years, 
-     we are still learning new things about our furry companions</p>
-    <p>
-     My first commitment to comsumers is that we will provide good products in quality 
-     and looks. Second, we will try hard to bring you good information on dogs. 
-     From picking the best breed to pottying training your puppy, we will make 
-     sure to deliver you with good contents.</p>
+      You love your puppy and you love your walk. Walking will bring your dog and you closer everyday. Let's make walking more pleasant.</p>
+   
+     <g-link class="index-button"to="/products/"><button class="button">SHOP NOW</button></g-link>
    </div>
+   
     
     <br>
-     <g-image class="heroimage" alt="cute dogs" src="https://images.ctfassets.net/80g45033v4tf/1EEVS52Z2Zh6GzSuc3QRFK/e73b21c43c4033e7297ae6a14a2f68fb/frontpage1.jpg" width="600" />
+     <g-image class="heroimage" alt="cute dogs" 
+              src="https://images.ctfassets.net/80g45033v4tf/1EEVS52Z2Zh6GzSuc3QRFK/e73b21c43c4033e7297ae6a14a2f68fb/frontpage1.jpg" />
 
-  </div>
+
   </Layout>
 </template>
 
@@ -44,5 +39,32 @@ export default {
   width: 95%;
   margin-left:auto;
   margin-right:auto;
+  object-fit:cover;
 }
+.indexpage-text {
+    max-width: 550px;
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+   }
+.button {
+  background-color: red;
+  border:none;
+  border-radius: 5px;
+  color:white;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+button:hover{
+  
+  transform: scale(1.08);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
+}
+
+
+    
+
 </style>

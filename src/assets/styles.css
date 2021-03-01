@@ -1,30 +1,8 @@
-
-
- /* ----HOMEPAGE------- */
-.indexpage-text {
-    max-width: 550px;
-    width: 85%;
-    margin-left:auto;
-    margin-right:auto;}
+ /* EMPTY FOR NOW */
 
 
 
 
-/* ----BLOG PAGE------- */
 
-.bannerimage, .blog-text img, .product-image {
-    width:100%;
-    max-height:600px;
-    object-fit:cover;}
 
-.blog-text {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.blogposts img {
-    width: 100%;
-    }
-.product-title {
-      text-transform: uppercase;
-    }
+

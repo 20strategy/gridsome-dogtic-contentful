@@ -3,15 +3,13 @@
 
       <div class="container">
           <div class="column1 box">
-            <g-image class="product-image" 
-            :src="$page.product.image.file.url" /></div>
+            <g-image class="product-image" :src="$page.product.image.file.url" /></div>
           <div class="column2 box"> 
             <div class="product-box-text">
-            <h1 class="product-title">{{$page.product.title}}</h1>
+            <h1 style="text-transform:uppercase">{{$page.product.title}}</h1>
             <p>{{$page.product.description}}</p>
             <p>Price: ${{$page.product.price}}</p>
-        <button
-            class="snipcart-add-item cart-button"
+      <button class="snipcart-add-item cart-button"
             :data-item-id="$page.product.id"
             :data-item-name="$page.product.title"
             :data-item-image="$page.product.image.file.url"
@@ -21,9 +19,7 @@
             </div>
           </div>
       </div>
-    
-
-    
+  
   </Layout>
      
 </template>
@@ -82,17 +78,16 @@ export default {
 }
 .column2 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-  flex-basis: 50%; /* sets initial width to 70% */
-  
-}
+  flex-basis: 50%; /* sets initial width to 70% */}
 
 .box {
   margin: 0;
   padding: 0;
+  text-align: left;
  
 }
 .product-box-text {
-  padding: 0px 20px;
+  padding-left:40px;
   max-width:450px;
   width: 80%;
 }
@@ -106,6 +101,10 @@ export default {
   text-decoration: none;
   font-size: 1rem;
 }
+.product-image {
+    width:100%;
+    max-height:600px;
+    object-fit:cover;}
 
 
 @media only screen and (max-width: 900px) {
@@ -115,7 +114,10 @@ export default {
   }
 
 .box {
-    margin: 0 0 1rem;
+    display:block;
+    max-width: 95%;
+    margin-left:auto;
+    margin-right:auto;
   }
 }
 </style>

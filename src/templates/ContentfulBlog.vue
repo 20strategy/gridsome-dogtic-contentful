@@ -1,13 +1,13 @@
 <template>
 <Layout>
-    <div class="between-header-footer">
+   
     <div class="blog-page">
       <h1 style="text-align:center">{{$page.post.title}}</h1>
       <g-image class="bannerimage" :src="$page.post.picture1.file.url" width="250"  height="300" fit="fill" />
       <p class="blog-text" v-html="richTextToHTML($page.post.description)"></p>
   
   </div>
-  </div>
+ 
         
   </Layout>
     
@@ -55,5 +55,16 @@ export default {
     width: 99%;
     margin-left: auto;
     margin-right: auto;}
+.bannerimage, .blog-text img{
+  width:100%;
+    max-height:600px;
+    object-fit:cover;
+}
+.blog-text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blogposts img {width: 100%;}
 
 </style>

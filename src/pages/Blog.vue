@@ -1,9 +1,7 @@
 <template>
 <Layout>
-  <div class="between-header-footer">
   <h1 style="text-align:center">Blog</h1> 
   <BlogGrid :blogs="$page.blogs.edges" />
-  </div>
 </Layout>
 </template>
 
@@ -48,5 +46,3 @@ export default {
 
 
 
-<style scoped>
-</style>

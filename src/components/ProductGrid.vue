@@ -1,11 +1,12 @@
 <template>
-   <div class="between-header-footer">
+
+<div class="grid">
       <div class ="projects">
         <div class="project" v-for="edge in $page.products.edges" :key="edge.node.id">
             <g-link :to="edge.node.path" class="project-link">
             <g-image :src="edge.node.image.file.url"
                 :alt="edge.node.image.title"
-                class="thumbnail"/>
+                class="product-thumbnail"/>
            
               <h3 class="project-title">{{ edge.node.title }}</h3>
                 <p>${{edge.node.price}}.00</p>
@@ -16,7 +17,7 @@
             :data-item-image="edge.node.image.file.url"
             :data-item-price="edge.node.price"
             :data-item-url="edge.node.path"
-            >Buy Now</button>
+            ></button>
            
             </g-link>
         </div>
@@ -51,7 +52,7 @@ export default {
 .project-link {
   text-decoration: none;
 }
-.thumbnail {
+.product-thumbnail {
   width: 95%;
   object-fit: cover;
   transition: all 0.15s ease;
@@ -62,16 +63,7 @@ export default {
   color: var(--color-contrast);
   margin: 0.5rem 0 1rem 0;
 }
-.categories {
-  font-size: 0.8rem;
-  color: var(--color-contrast-1);
-}
-.category {
-  margin-right: 0.8rem;
-}
-.category:last-of-type {
-  margin: 0;
-}
+
 .project:hover .thumbnail {
   transform: scale(1.02);
   box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);

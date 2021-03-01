@@ -1,12 +1,12 @@
 <template>
 
- <div class="between-header-footer">
+ <div class="grid">
       <div class ="projects">
         <div class="project" v-for="edge in $page.blogs.edges" :key="edge.node.id">
             <g-link :to="edge.node.path" class="project-link">
             <g-image :src="edge.node.picture1.file.url"
                 :alt="edge.node.picture1.title"
-                class="thumbnail"/>
+                class="blog-thumbnail"/>
            
               <h2 class="blog-title">{{ edge.node.title }}</h2>
                 <p class="blog-excerpt">{{edge.node.excerpt}}</p>
@@ -41,10 +41,8 @@ export default {
   text-align: center;
 }
 .project-link {
-  text-decoration: none;
-}
-.thumbnail {
-
+  text-decoration: none;}
+.blog-thumbnail {
   width: 95%;
   object-fit: cover;
   transition: all 0.15s ease;
@@ -69,28 +67,15 @@ export default {
   margin-right:auto;
 }
 
-.categories {
-  font-size: 0.8rem;
-  color: var(--color-contrast-1);
-}
-.category {
-  margin-right: 0.8rem;
-}
-.category:last-of-type {
-  margin: 0;
-}
+
 .project:hover .thumbnail {
   transform: scale(1.02);
   box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
 }
 
 @media (min-width: 520px) {
-  .project {
-    grid-column: auto / span 1;
-  }
-  .project:nth-child(3n+1) {
-    grid-column: auto / span 1;
-  }
+  .project {grid-column: auto / span 1;}
+  .project:nth-child(3n+1) {grid-column: auto / span 1;}
 }
 
 </style>

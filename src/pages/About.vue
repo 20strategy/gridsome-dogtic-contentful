@@ -1,32 +1,21 @@
 <template>
   <Layout>
-    <g-image class="about-hero-image" alt="cool dogs" src="~/aboutpage.webp" width="700" />
+    <g-image class="about-hero-image" alt="cool dogs" src="https://images.ctfassets.net/80g45033v4tf/VaHaxz1kCO6Mb9WmGwE82/9a64691d308a86dc20d919f548d67fc2/PRODUCT_BOTTOM_960_620.jpg"  />
     <div class="about-text">
-    <h1>What Happens When You Try to Fake Your Death in Front of Your Dog?</h1>
-    <p>
-      Do you think he would be fooled. 
-      I am sure everyone has tried this at least once.  
-      Here is a youtube video of border collie's reaction.  The owner was faking her 
-      death. Can you guess what happened?
-    </p>
-    <ul>
-     <li> He knows the owner is not dead.  By smelling and licking, dog know 
-       instantaneously that nothing is wrong the owner.</li> 
-     <li> He thinks the owner is playing</li> 
-     <li> He thinks you are just tired. </li> 
-       
-       
-    </ul>
+    <h1 style="text-align:center">Welcome to Dogtic.com</h1>
+  <p>
+     Hi, My name is <b>Andrew Kim</b> and I am the co-founder of DOGTIC.COM. I started this website/blog to provide quality products for dogs and good information for dog-parents</p>
+     
+    <p>Although dogs have been with us more than 10,000+ years, 
+     we are still learning new things about our furry companions</p>
     <p>
      My first commitment to comsumers is that we will provide good products in quality 
-     and looks. Second, we will try hard to bring you good information on dogs. 
-     From picking the best breed to pottying training your puppy, we will make 
-     sure to deliver you with good contents.
-    </p>
+     and looks. Second, we will try our best to bring you good information on dogs, from picking the best breed to potty training your puppy. We will make 
+     sure to deliver you with good contents.</p>
     </div>
 
  
-    <g-image alt="cute dogs" class="heroimage" src="~/aboutpage1.webp" />
+    <g-image alt="cute dogs" class="about-hero-image" src="~/aboutpage1.webp" />
     <br>
    
    
@@ -54,13 +43,7 @@ export default {
     margin-left:auto;
     margin-right: auto; 
 }
-.heroimage {
-  display: block;
-  max-width: 1050px;
-  width: 95%;
-  margin-left:auto;
-  margin-right:auto;
-}
+
 
 .about-text {
     max-width: 550px;
