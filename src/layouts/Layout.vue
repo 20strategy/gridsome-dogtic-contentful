@@ -1,8 +1,8 @@
 <template>
   <div>
     <header class="header">       
-        <g-link exact to="/">
-        <span class="logo-text">DOGTIC.</span>
+        <g-link class="logo-text" exact to="/">
+        <span class="logo-text1">DOGTIC.</span>
         <span class="logo-text2">com</span>
         </g-link> 
       <nav class="nav">
@@ -10,10 +10,10 @@
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
       <span class="nav snipcart-summary">
-        <g-link href="#" class="snipcart-customer-signin nav__link"  style="color:#777"> 
-           LOG IN </g-link>  
-         <g-link class="snipcart-checkout nav__link" style="color:#777"> 
-           CART
+        <g-link href="#" class="snipcart-customer-signin nav__link" style="color:#666" > 
+           <g-image src="~/assets/login.svg" width="26px"/> </g-link>  
+         <g-link class="snipcart-checkout nav__link" > 
+         <g-image src="~/assets/cart.svg" width="26px"/>
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
             </g-link>   </span>   
       </nav> 
@@ -63,8 +63,62 @@ query {
 .box {
   margin: 0;
   padding: 0;
- 
+ }
+    /*  -----UNIVERSAL CSS------ */
+/* @font-face {
+    font-family: Jost;
+    src: url('../assets/Jost-Regular.ttf');
+    font-weight: normal;}  */
+
+
+.between-header-footer {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 3px ;}
+
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+    background-color:white ;}
+
+h1,h2{color:#444;}
+
+p ,ul  {color: #666}
+
+div {margin-bottom: 50px;}
+a   {color:#555;text-decoration:none}
+a:hover {color: #666;}
+a: {color: red;}
+
+nav {height: 20px;}
+
+.nav a:hover {
+    color: #111;
+    text-decoration:underline;}
+.nav .active {
+    text-decoration:underline;
+    color: #111;}
+
+.logo-text1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color:blue;}
+.logo-text1:hover {color:rgb(120, 120, 231)}
+.logo-text2 {color:red;letter-spacing: -0.0rem;}
+
+.nav__link {
+    font-size: 15px;
+    margin-left: 20px;
+
 }
+.logoimage{margin-right:10px;}
+.home-links a {margin-right: 1rem;}
+.snipcart-checkout.nav__link.active--exact.active {
+  text-decoration: none;
+}
+
 /*
 .special-circle {
   position:absolute;
@@ -79,18 +133,11 @@ query {
 */
 
 @media only screen and (max-width: 900px) {
-
   .header {
-      /* it place the items in vertical direction */
     flex-direction: column;
-    height:110px;
-  }
-  .box {
-    text-align: center;
-  }
-  nav {
-    margin-bottom: 30px;
-  } 
+    height:110px;}
+  .box {text-align: center;}
+  nav {margin-bottom: 30px;} 
 
 }
 </style>
