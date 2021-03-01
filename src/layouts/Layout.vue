@@ -9,12 +9,13 @@
         <g-link class="nav__link" to="/about/">ABOUT</g-link>
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
-        <g-link href="#" class="snipcart-user-profile nav__link"  style="color:#777"> 
+      <span class="nav snipcart-summary">
+        <g-link href="#" class="snipcart-customer-signin nav__link"  style="color:#777"> 
            LOG IN </g-link>  
          <g-link class="snipcart-checkout nav__link" style="color:#777"> 
            CART
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
-            </g-link>      
+            </g-link>   </span>   
       </nav> 
     </header>
     <!-- <div class="special-circle"></div>  -->

@@ -24,7 +24,7 @@ export default function (Vue, { router, head, isClient }) {
     body: true,
     id: 'snipcart',
     'data-api-key': 'YzMxODU1YWYtOGIzOS00YmFlLTkxNDktNzNiOTgxYjJjYjRkNjM3NDQwMTE2MzAyNzQ0MDkz',
-    'data-config-add-product-behavior' : 'none',
+    'data-config-modal-style' : 'side',
   });
   // Set default layout as a global component
   Vue.component('Layout', Layout)
