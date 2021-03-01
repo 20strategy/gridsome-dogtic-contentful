@@ -9,7 +9,7 @@
         <g-link class="nav__link" to="/about/">ABOUT</g-link>
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
-        <g-link class="snipcart-customer-signin nav__link" href="#" style="color:#777"> 
+        <g-link href="#" class="snipcart-user-profile nav__link"  style="color:#777"> 
            LOG IN </g-link>  
          <g-link class="snipcart-checkout nav__link" style="color:#777"> 
            CART
@@ -88,7 +88,6 @@ query {
     text-align: center;
   }
   nav {
-   
     margin-bottom: 30px;
   } 
 
