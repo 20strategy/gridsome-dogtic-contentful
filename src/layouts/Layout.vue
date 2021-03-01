@@ -9,6 +9,8 @@
         <g-link class="nav__link" to="/about/">ABOUT</g-link>
         <g-link class="nav__link" to="/blog/">BLOG</g-link>
         <g-link class="nav__link" to="/products/">SHOP</g-link>
+        <g-link class="snipcart-customer-signin nav__link" href="#" style="color:#777"> 
+           LOG IN </g-link>  
          <g-link class="snipcart-checkout nav__link" style="color:#777"> 
            CART
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
