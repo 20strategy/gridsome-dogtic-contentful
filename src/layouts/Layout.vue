@@ -105,7 +105,7 @@ nav {height: 20px;}
     font-size: 30px;
     letter-spacing: 3px;
     color:blue;}
-.logo-text1:hover {color:rgb(120, 120, 231)}
+.logo-text1:hover {color:rgb(5, 5, 158)}
 .logo-text2 {color:red;letter-spacing: -0.0rem;}
 
 .nav__link {
