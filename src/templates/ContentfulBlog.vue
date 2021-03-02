@@ -3,7 +3,7 @@
    
     <div class="blog-page">
       <h1 style="text-align:center">{{$page.post.title}}</h1>
-      <g-image class="bannerimage" :src="$page.post.picture1.file.url" width="250"  height="300" fit="fill" />
+      <g-image class="bannerimage" :src="$page.post.picture1.file.url+`?h=550`"/>
       <p class="blog-text" v-html="richTextToHTML($page.post.description)"></p>
   
   </div>
@@ -40,7 +40,7 @@ export default {
       return documentToHtmlString(content, {
         renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: (node) => {
-            return `<img src="${node.data.target.fields.file.url}?w=800" alt="${node.data.target.fields.title}" />`
+            return `<img src="${node.data.target.fields.file.url}?w=450" style="width:98%;max-width:600px;display:block;margin-right:auto;margin-left:auto;" alt="${node.data.target.fields.title}" />`
           }
         }
       })
@@ -65,6 +65,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
 }
-.blogposts img {width: 100%;}
+
 
 </style>

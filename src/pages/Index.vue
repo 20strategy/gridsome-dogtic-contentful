@@ -3,10 +3,7 @@
   
     <g-image  class="heroimage" 
               alt="cute dogs" 
-              src="https://bit.ly/37Q5dnM" /> <br>
-    <g-image  class="heroimage" 
-              alt="cute dogs" 
-              src="~/assets/welcome.jpg" width="1200"/>
+              src="~/assets/welcome.jpg" width="1200" quality="90"/>
     
 
     <div class="indexpage-text">
@@ -20,8 +17,9 @@
    
     
     <br>
+    
      <g-image class="heroimage" alt="cute dogs" 
-              src="https://images.ctfassets.net/80g45033v4tf/1EEVS52Z2Zh6GzSuc3QRFK/e73b21c43c4033e7297ae6a14a2f68fb/frontpage1.jpg" />
+              src="~/assets/frontpage.jpg" width="1050" quality="90" />
 
 
   </Layout>
@@ -41,7 +39,6 @@ export default {
   display: block;
   max-width: 1050px;
   width: 95%;
-  height: 500px;
   margin-left:auto;
   margin-right:auto;
   object-fit:cover;

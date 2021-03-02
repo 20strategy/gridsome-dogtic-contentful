@@ -3,7 +3,7 @@
 
       <div class="container">
           <div class="column1 box">
-            <g-image class="product-image" :src="$page.product.image.file.url" /></div>
+            <g-image class="product-image" :src="$page.product.image.file.url+`?h=1000`" /></div>
           <div class="column2 box"> 
             <div class="product-box-text">
             <h1 style="text-transform:uppercase">{{$page.product.title}}</h1>

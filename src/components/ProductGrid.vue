@@ -4,7 +4,7 @@
       <div class ="projects">
         <div class="project" v-for="edge in $page.products.edges" :key="edge.node.id">
             <g-link :to="edge.node.path" class="project-link">
-            <g-image :src="edge.node.image.file.url"
+            <g-image :src="edge.node.image.file.url+`?h=1000`"
                 :alt="edge.node.image.title"
                 class="product-thumbnail"/>
            

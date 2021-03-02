@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <g-image class="about-hero-image" alt="cool dogs" src="https://images.ctfassets.net/80g45033v4tf/VaHaxz1kCO6Mb9WmGwE82/9a64691d308a86dc20d919f548d67fc2/PRODUCT_BOTTOM_960_620.jpg"  />
+    <g-image class="about-hero-image" alt="cool dogs" src="~/assets/two-dogs.jpg" width="900" quality="75" />
     <div class="about-text">
     <h1 style="text-align:center">Welcome to Dogtic.com</h1>
   <p>
@@ -15,7 +15,7 @@
     </div>
 
  
-    <g-image alt="cute dogs" class="about-hero-image" src="~/aboutpage1.webp" />
+    <g-image alt="cute dogs" class="about-hero-image" src="~/aboutpage1.webp" width="1000" quality="90"/>
     <br>
    
    
@@ -38,7 +38,7 @@ export default {
 .about-hero-image {
     display: block;
     object-fit: cover;
-    max-width: 700px;
+    max-width: 900px;
     width: 98%;
     margin-left:auto;
     margin-right: auto; 
