@@ -12,9 +12,9 @@
         <g-link class="nav__link" to="/products/">SHOP</g-link>
       <span class="nav snipcart-summary">
         <g-link href="#" class="snipcart-customer-signin nav__link"> 
-           <g-image src="~/assets/login.svg" width="26px"/> </g-link>  
+           <g-image class="header-svg" src="~/assets/login.svg" width="26px"/> </g-link>  
          <g-link class="snipcart-checkout nav__link" > 
-         <g-image src="~/assets/cart.svg" width="26px"/>
+         <g-image "header-svg" src="~/assets/cart.svg" width="26px"/>
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
             </g-link>   </span>   
       </nav> 
@@ -49,6 +49,10 @@ query {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 2rem ;   }
+.header-svg {
+  width: 26px;
+  height: auto;
+}
 
 .column1 {
   flex-shrink: 0; /* shrinks to 0 to apply 70% width*/

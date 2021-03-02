@@ -39,6 +39,7 @@ export default {
   display: block;
   max-width: 1050px;
   width: 95%;
+  height: auto;
   margin-left:auto;
   margin-right:auto;
   object-fit:cover;
