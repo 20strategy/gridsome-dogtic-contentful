@@ -3,7 +3,11 @@
   
     <g-image  class="heroimage" 
               alt="cute dogs" 
-              src="https://bit.ly/37Q5dnM" />
+              src="https://bit.ly/37Q5dnM" /> <br>
+    <g-image  class="heroimage" 
+              alt="cute dogs" 
+              src="~/assets/welcome.jpg" width="1200"/>
+    
 
     <div class="indexpage-text">
    
@@ -37,6 +41,7 @@ export default {
   display: block;
   max-width: 1050px;
   width: 95%;
+  height: 500px;
   margin-left:auto;
   margin-right:auto;
   object-fit:cover;

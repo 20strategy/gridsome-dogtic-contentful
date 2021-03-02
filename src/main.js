@@ -5,7 +5,7 @@
 import Layout from '~/layouts/Layout.vue'
 import '~/assets/styles.css'
 
-export default function (Vue, { router, head, isClient }) {
+export default async function (Vue, { router, head, isClient }) {
   
   head.link.push({
     rel: 'stylesheet',
