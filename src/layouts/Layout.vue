@@ -14,7 +14,7 @@
         <g-link href="#" class="snipcart-customer-signin nav__link"> 
            <g-image class="header-svg" src="~/assets/login.svg" width="26px"/> </g-link>  
          <g-link class="snipcart-checkout nav__link" > 
-         <g-image "header-svg" src="~/assets/cart.svg" width="26px"/>
+         <g-image class="header-svg" src="~/assets/cart.svg" width="26px"/>
                 <span class="snipcart-items-count nav__total-items button__text" style="font-size:11px;">0</span>
             </g-link>   </span>   
       </nav> 
