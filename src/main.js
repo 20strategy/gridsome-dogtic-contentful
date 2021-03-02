@@ -3,24 +3,18 @@
 
 // import DefaultLayout from '~/layouts/Default.vue'
 import Layout from '~/layouts/Layout.vue'
-import '~/assets/styles.css'
+
 
 export default async function (Vue, { router, head, isClient }) {
  
    head.link.push({
     rel: 'stylesheet',
-    href: 'https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css'
+    href: 'https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css'
    });
-
-  // head.script.push({
-  //    type: 'text/javascript',
-  //    src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
-  //   body: true,
-  //  });
 
  head.script.push({
     type: 'text/javascript',
-    src: 'https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js',
+    src: 'https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js',
     body: true,
     id: 'snipcart',
     'data-api-key': 'YzMxODU1YWYtOGIzOS00YmFlLTkxNDktNzNiOTgxYjJjYjRkNjM3NDQwMTE2MzAyNzQ0MDkz',
