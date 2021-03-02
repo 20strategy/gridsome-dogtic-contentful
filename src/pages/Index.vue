@@ -3,7 +3,7 @@
   
     <g-image  class="heroimage" 
               alt="cute dogs" 
-              src="~/assets/welcome.jpg" width="1200" quality="90"/>
+              src="~/assets/welcome.jpg" width="1920" height="1156" quality="80"/>
     
 
     <div class="indexpage-text">
@@ -19,7 +19,7 @@
     <br>
     
      <g-image class="heroimage" alt="cute dogs" 
-              src="~/assets/frontpage.jpg" width="1050" quality="90" />
+              src="~/assets/frontpage.jpg" width="1200" height="660" quality="80" />
 
 
   </Layout>
