@@ -29,7 +29,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Welcome to Dogtic.com'
+    title: 'Dogtic.com'
   }
 }
 </script>
