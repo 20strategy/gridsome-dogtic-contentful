@@ -18,7 +18,7 @@ export default async function (Vue, { router, head, isClient }) {
   //   body: true,
   //  });
 
-  head.script.push({
+ head.script.push({
     type: 'text/javascript',
     src: 'https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js',
     body: true,
