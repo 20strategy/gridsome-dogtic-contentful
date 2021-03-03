@@ -45,9 +45,9 @@ query {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    height: 80px;
+    height: 110px;
     max-width: 100%;
-    margin: 0 auto;
+ 
     padding: 0 2rem ;   }
 .header-svg {
   width: 26px;
@@ -121,7 +121,10 @@ nav {height: 20px;}
 .home-links a {margin-right: 1rem;}
 .snipcart-checkout.nav__link.active--exact.active {
   text-decoration: none;}
-
+.header-svg {
+  width:20px;
+  height: 18px;
+}
 /*
 .special-circle {
   position:absolute;
@@ -137,8 +140,8 @@ nav {height: 20px;}
 
 @media only screen and (max-width: 900px) {
   .header {
-    flex-direction: column;
-    height:110px;}
+      flex-direction: column;}
+  
  
   nav {margin-bottom: 30px;} 
 
