@@ -42,7 +42,7 @@ export default {
 
 .projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 0px;
 }
 .project {
